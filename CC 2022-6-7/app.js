@@ -36,6 +36,26 @@ function countPositiveSumNegative(arr){
 
 //not working, idk why it hates me
 
+//second attempt
+
+function countPositiveSumNegative(arr){
+    const empty = arr => arr.length = 0
+    let positiveArr = arr.filter(e => e>0)
+    let count = positiveArr.length
+    let negativeArr = arr.filter (e => e<0)
+    let sum = negativeArr.reduce((acc,c)=>acc+c,0)
+    if(arr == [] || arr == null){
+        return []
+    }else if(arr.forEach(e=>{
+        if(e==0){
+            return [empty]
+        }
+    })
+    return[count,sum]
+}
+
+//Can't figure out to have [0,0] to return []. However the rest of the problem is working. 
+
 console.log(countPositiveSumNegative([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15],[10, -65]]))
 console.log(countPositiveSumNegative([[3,-6,9,-12,15,0],[3,-18]]))
 console.log(countPositiveSumNegative([[],[]]))
