@@ -4,3 +4,10 @@
 
 // Note: if there is nothing to sum, the sum is default to 0.
 
+// first attempt 
+
+function positiveSum(arr) {
+    if(arr % 2 === 0){
+      arr.reduce
+    }
+  }
