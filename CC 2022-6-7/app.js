@@ -44,17 +44,13 @@ function countPositiveSumNegative(arr){
     let count = positiveArr.length
     let negativeArr = arr.filter (e => e<0)
     let sum = negativeArr.reduce((acc,c)=>acc+c,0)
-    if(arr == [] || arr == null){
+    if(arr == [] || arr == null  || arr.length == 0){
         return []
-    }else if(arr.forEach(e=>{
-        if(e==0){
-            return [empty]
-        }
-    })
+    }
     return[count,sum]
 }
 
-//Can't figure out to have [0,0] to return []. However the rest of the problem is working. 
+//The problem was dealing with zero. In order to address that, you need to input arr.length == 0 returns []. Doesn't make sense to me, becuase from what I understand arr.length is an empty array, not a zero. For whatever reason, though, that solves the problem. 
 
 console.log(countPositiveSumNegative([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15],[10, -65]]))
 console.log(countPositiveSumNegative([[3,-6,9,-12,15,0],[3,-18]]))
