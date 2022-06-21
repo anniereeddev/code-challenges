@@ -24,3 +24,12 @@ const stringToNumber = function(str){
   }
 
 // This is the opposite of what we saw in the "number to string" challenge so I thought this would work, but for some reason it doesn't seem to work. maybe I'm using the wrong subtract sign for javascript?
+
+// second attempt
+
+const stringToNumber = function(str){
+    return Number(str)
+  }
+
+//   It worked! 
+// This is essentially the opposite of one of the solutions from the number to string kata. Looks like it works both ways. Noice. 
