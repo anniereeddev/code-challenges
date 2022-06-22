@@ -24,4 +24,11 @@ squareSum([1,2,2])
 
 // Welp, that's not working. I don't think I have the syntax of forEach right. 
 
+// Second attempt
 
+function squareSum(numbers){
+    let result = numbers.reduce((acc,c)=>acc+c**2,0)
+    return result 
+}
+
+// It works! Reduce ended up being a better option than forEach becuase it adds the indexes together and returns a number. All I had to do was square the added number and woila! I fixed it!
