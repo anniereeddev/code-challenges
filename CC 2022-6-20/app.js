@@ -32,3 +32,25 @@ function squareSum(numbers){
 }
 
 // It works! Reduce ended up being a better option than forEach becuase it adds the indexes together and returns a number. All I had to do was square the added number and woila! I fixed it!
+
+// Most efficient community answer:
+
+function squareSum(numbers){
+    return numbers.reduce(function(sum, n){
+      return (n*n) + sum;
+    }, 0)
+  }
+
+//   This one used reduce as well. Similar concept to what I did except no arrow function here.
+
+// Answer using forEach because I'm curious:
+
+function squareSum(numbers){
+    var sum = 0;
+    numbers.forEach(function(n) {
+      sum += n * n
+    });
+    return sum;
+  }
+
+//   I didn't understand the right side of the forEach operator in the curly brackets. Looks like you pretty much do whatever you want in there, makes a lot more sense seeing it.
