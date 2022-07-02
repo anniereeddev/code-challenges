@@ -33,3 +33,17 @@ const stringToNumber = function(str){
 
 //   It worked! 
 // This is essentially the opposite of one of the solutions from the number to string kata. Looks like it works both ways. Noice. 
+
+// other solutions
+
+var stringToNumber = function(str){
+    return parseInt(str);
+  }
+
+//   This is apparently another way to turn a string into a number. Good to know. That's the whole purpose of parseInt. I wonder why there are different ways to do the same thing in Javascript. 
+
+var stringToNumber = function(str){
+    return +str;
+  }
+
+//   I *think* that this is the opposite of num + '' that we saw last code challenge. Not sure though
