@@ -6,7 +6,7 @@
 
 // You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
 
-// First Attempt:
+// FIRST ATTEMPT:
 
 // P: Function will take in number of hours. 0.5 liters of water = 1 hr
 // R: Returns water in litres. Round vallue to the smallest value, aka the first integer.
