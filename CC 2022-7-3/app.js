@@ -20,4 +20,4 @@ function litres(time) {
     return Math.round(0.5 * time); //Math.round returns the value of the number rounded to the nearest integer. 
   }
 
-//   first attempt didn't work. Looks like 0 caused an issue in the function, or in other words when the function takes in zero it returns an undefined. How do I account for that? 
+//   first attempt didn't work. Looks like 0 caused an issue in the function, or in other words when the function takes in zero it returns an undefined. How do I account for that??
