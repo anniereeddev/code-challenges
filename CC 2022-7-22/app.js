@@ -66,8 +66,27 @@ function century(year) {
     }else if (2001<year<2100){
         result = '21';
     } else{
-        return = 'undefined';
+        return 'undefined';
     }
 }
 
 // Didn't work :/ dagnabit, I thought I had that one! it looks like we have a problem with the undefined at the end. I'll change it to see if I can get it to work. 
+
+// O took out the = in the undefined and that error has gone away. Great! Guess no = allowed.
+
+// New error: Testing for year 1705: expected undefined to equal 18 
+
+// So I'm guessing from that this isn't working. Not sure why -- time to google!
+
+// second attempt:
+
+function century(year) {
+    return Math.floor((year-1)/100) + 1;
+}
+
+// It worked!
+
+// Learning time:
+// The Math.floor() function always rounds down and returns the largest integer less than or equal to a given number.
+// So what we're doing here is taking the number, rounding down (1780 would round down to 1700), and returning one integer down (17 turns to 16).
+// I didn't know this was an available function in javascript. Ya learn something new every day!
