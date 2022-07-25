@@ -90,3 +90,23 @@ function century(year) {
 // The Math.floor() function always rounds down and returns the largest integer less than or equal to a given number.
 // So what we're doing here is taking the number, rounding down (1780 would round down to 1700), and returning one integer down (17 turns to 16).
 // I didn't know this was an available function in javascript. Ya learn something new every day!
+
+// Other solutions:
+
+const century = year => Math.ceil(year/100)
+
+// returns the smallest integer greater than or equal to x. It's the same value as -Math.floor(-x).
+// So basically what we're doing is reducing the number to its integer value (1780 would become 17.8) and then returning it as the smallest equal or greater integer (17.8 --> 17). That's smart!
+
+// I'm still not sure why my if/else statement didn't work. Here is one solution that is a bit similar:
+
+function century(year) {
+    var century = 0;
+    
+    for(var i = 0; i < year; i++) {
+      if(i % 100 == 0) {
+        century++;
+      }
+    }
+    return century;
+  }
