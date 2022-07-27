@@ -13,3 +13,30 @@
 function greet(name){
     return "Hello <name>, how are you today?"
 }    
+
+// Didn't work, I'm pretty sure that I have the syntax wrong here. 
+
+function greet(name){
+    return "Hello ${name}, how are you today?";
+}
+
+// I think we need a parenthesis
+
+function greet(name){
+    return("Hello ${name}, how are you today?");
+}
+
+// Still didn't work! I think we need to define name as a variable
+function greet(name){
+    const name = prompt("What is your name?");
+    return("Hello ${name}, how are you today?");
+}
+
+// Still not working. So after some googling, this is the new format I'll be trying.
+
+function greet(name) {
+    return "Hello " + name + ", how are you today?";
+}
+
+// It worked! I don't think that should have been as hard lol
+
