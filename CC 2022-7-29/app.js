@@ -15,7 +15,18 @@
 // P: Create a function basicOp
 // Find a function that will accept an operation and the numbers.
 
+// When in doubt, write an if statement!
+
 function basicOp(operation, value1, value2)
-{
-  // Code
+{   if(operation == "*") 
+        { result = value1 * value2;}
+    else if(operation == "/") 
+        { result = value1 / value2;} 
+    else if(operation == "+") 
+        {result = value1 + value2;}
+    else if(operation == "-") 
+        {result = value1 - value2;}
+        return result
 }
+
+// it worked!! I'm BRILLIANT!
