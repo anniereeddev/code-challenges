@@ -30,3 +30,30 @@ function basicOp(operation, value1, value2)
 }
 
 // it worked!! I'm BRILLIANT!
+
+// other solutions:
+
+function basicOp(operation, value1, value2) {
+    switch (operation) {
+        case '+':
+            return value1 + value2;
+        case '-':
+            return value1 - value2;
+        case '*':
+            return value1 * value2;
+        case '/':
+            return value1 / value2;
+        default:
+            return 0;
+    }
+}
+
+// this on using switch case which is something I haven't used much, good solution
+
+// function basicOp(o, a, b) {
+  return eval(a+o+b);
+}
+
+// what the --  !! 
+// The eval() function evaluates JavaScript code represented as a string and returns its completion value. 
+// that's incredibly efficient, probably the best way to do this.
