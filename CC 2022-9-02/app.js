@@ -27,15 +27,24 @@
 
 // third attempt
 
-function maps(x){
-    let result;
-    if (x = 0) {
-        result = 0;
-    } else {
-        result = x*2;
-    }
-    return result;
-}
+// function maps(x){
+//     let result;
+//     if (x = 0) {
+//         result = 0;
+//     } else {
+//         result = x*2;
+//     }
+//     return result;
+// }
 
 // still didn't work gaaahhhhh what am i doing wrooonnnngggg
 // let's try this again
+// after some research, we are trying a whole new method
+
+function maps(x){
+    result = [2*x]
+    return result
+}
+
+// I feel like this is pretty similar to my first attempt, but it doesn't hurt to give it a try!
+// it didn't work AGAIN GAH
