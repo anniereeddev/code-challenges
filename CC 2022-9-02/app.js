@@ -42,9 +42,14 @@
 // after some research, we are trying a whole new method
 
 function maps(x){
-    result = [2*x]
-    return result
+    let result = x.map(function(x) {
+        return 2*x;
+    });
+    return maps;
 }
 
 // I feel like this is pretty similar to my first attempt, but it doesn't hurt to give it a try!
 // it didn't work AGAIN GAH
+// after some tweaks we're trying this
+// didn't work. why am I not surprised
+
