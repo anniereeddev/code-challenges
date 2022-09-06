@@ -41,15 +41,24 @@
 // let's try this again
 // after some research, we are trying a whole new method
 
-function maps(x){
-    let result = x.map(function(x) {
-        return 2*x;
-    });
-    return maps;
-}
+// function maps(x){
+//     let result = x.map(function(x) {
+//         return 2*x;
+//     });
+//     return maps;
+// }
 
 // I feel like this is pretty similar to my first attempt, but it doesn't hurt to give it a try!
 // it didn't work AGAIN GAH
 // after some tweaks we're trying this
-// didn't work. why am I not surprised
+// didn't work. why am I not surprised. Back to the researching
 
+function maps(x) {
+    let result = [];
+    for (let i = 0; i < x.length; i++) {
+        result.push(x[i] * 2);
+    }
+    return result;
+}
+
+// it is embarrassing how long and how much research it took me to get this. I just kept getting hung up on variables and the for loop...anyway, the point is, we got there. It works! gah. 
