@@ -62,3 +62,16 @@ function maps(x) {
 }
 
 // it is embarrassing how long and how much research it took me to get this. I just kept getting hung up on variables and the for loop...anyway, the point is, we got there. It works! gah. 
+
+// here are some other examples of successful answers :
+
+function maps(x){
+    return x.map(n => n * 2);
+  }
+
+//   I like this one -- very clean, no for loop necessary
+
+maps = x => x.map(e => e * 2);
+
+// ooooo fancy 
+
