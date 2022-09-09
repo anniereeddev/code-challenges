@@ -18,10 +18,32 @@
 //     return reverseArr;
 // }
 
+// function digitize(n) {
+//     var makeArr = string(n).split("").map((num)=?{
+//     var reverseArr = splitString.reverse();
+//     return reverseArr;
+// })
+// }
+
+// fail :'( what did I do wrong
+// apparently n.split is not a function. let's try to fix that.
+
+// still didn't work... let's DO OUR RESEARCH.
+// I think the string split is the problem 
+
+// function digitize(n) {
+//     var makeArr = n.toString().split('');
+//     var reverseArr = splitString.reverse();
+//     return reverseArr;
+// }
+
+// still no. hmmmmmm. I think we're still having string split problems.
+
 function digitize(n) {
-    var makeArr = n.split("");
+    var makeArr = n.toString().split('');
+    for (i=0; i < makeArr.length; i++) makeArr[i] = +makeArr[i] | 0;
     var reverseArr = splitString.reverse();
     return reverseArr;
 }
 
-// fail :'( what did I do wrong
+// still no WHYYYY
