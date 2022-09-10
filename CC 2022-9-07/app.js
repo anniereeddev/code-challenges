@@ -39,11 +39,19 @@
 
 // still no. hmmmmmm. I think we're still having string split problems.
 
+// function digitize(n) {
+//     Array.from(String(n), Number);
+//     var reverseArr = splitString.reverse();
+//     return reverseArr;
+// }
+
+// still no WHYYYY
+
 function digitize(n) {
-    var makeArr = n.toString().split('');
-    for (i=0; i < makeArr.length; i++) makeArr[i] = +makeArr[i] | 0;
-    var reverseArr = splitString.reverse();
+    let arrayOfDigits = Array.from(String(n), Number);
+    let reverseArr = arrayOfDigits.reverse();
     return reverseArr;
 }
 
-// still no WHYYYY
+// ARGH IT WASN'T SPLIT STRING IT WAS FREAKING REVERSEARR !!!
+// ugh. well we got there.
