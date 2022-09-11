@@ -55,3 +55,20 @@ function digitize(n) {
 
 // ARGH IT WASN'T SPLIT STRING IT WAS FREAKING REVERSEARR !!!
 // ugh. well we got there.
+
+// Other successful answers
+
+//   This one is a bit more concise, i like it and I didn't know about this split string context. also they used map, I really need to get better at map
+function digitize(n) {
+    return String(n).split('').map(Number).reverse()
+  }
+
+//   Also pretty succinct, more array syntax
+  function digitize(n) {
+    return Array.from(String(n), Number).reverse();
+  }
+
+//   so many ways to do it!
+function digitize(n) {
+    return String(n).split('').reverse().map(Number)
+  }
