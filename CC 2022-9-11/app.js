@@ -31,3 +31,12 @@
 // }
 
 // This did not work. WHY DIDN'T IT WORK???? 
+// let's try to add this as an array
+
+function abbrevName(name){
+    let newArray = name.split(" ")
+    return (newArray[0][0] + "." + newArray[1][0]).toUpperCase()
+}
+
+// It worked! I am brilliant.
+
