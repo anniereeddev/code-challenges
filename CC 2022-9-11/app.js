@@ -13,7 +13,21 @@
 // P: Start with a function called function abbrevName(name)
 // I have no idea how to do this... let's attempt something. 
 
-function apprevName(name){
-    let index = 1
-    return SVGComponentTransferFunctionElement.charAT(index); 
-}
+// function apprevName(name){
+//     let index = 1
+//     return SVGComponentTransferFunctionElement.charAT(index); 
+// }
+
+// Let's attempt this again and DO OUR RESEARCH
+
+// function apprevName(name){
+//     const answer = [name[0]]
+//     for(let i = 0; i < name.length; i++) {
+//         if(name[i] === " ") {
+//             answer.push(name[i + 1]);
+//         }
+//     }
+//     return answer.map(e1 => else.toUpperCase()).join(".")
+// }
+
+// This did not work. WHY DIDN'T IT WORK???? 
