@@ -40,3 +40,13 @@ function abbrevName(name){
 
 // It worked! I am brilliant.
 
+// Other solutions
+
+// This one's a little cleaner. I'm trying to get to a point where I don't need to define variables.
+
+function abbrevName(name){
+
+    return name.split(' ').map(i => i[0].toUpperCase()).join('.')
+
+}
+
