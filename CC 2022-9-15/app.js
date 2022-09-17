@@ -27,3 +27,10 @@ function past(h, m, s){
 // I think this has potential except I'm worried about the input constraints, but let's give it a try.
 
 // Holy crap, it passed! I'M AMAZING
+
+// Other solutions -- we're all about efficiency
+
+const past = (h,m,s) => 1000 * (3600 * h + 60 * m + s);
+
+// I like this format, I want to do it more
+// That's pretty much the only other good one
