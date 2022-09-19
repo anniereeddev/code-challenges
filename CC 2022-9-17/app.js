@@ -20,3 +20,24 @@ function paperwork(n,m){
 }
 
 // got it. Man these math ones are EASY
+
+// Let's get some other solutions to INCREASE OUR EFFICIENCY
+
+function paperwork(n, m) {
+    return n > 0 && m > 0 ? n * m : 0
+  }
+
+//   wooooow fancy
+
+function paperwork(n, m) {
+    if (m < 0 || n < 0) {
+      return 0;
+    }
+    return m * n;
+  }
+
+//   similar, I guess you don't need if/else function
+
+// and, the most efficient
+
+paperwork = (n, m) => n < 0 || m < 0 ? 0 : n * m
