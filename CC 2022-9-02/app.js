@@ -15,12 +15,26 @@
 
 // Didn't work because of flippin zero
 
-function maps(x){
-    if x=0{
-        return = 0;
-    }else{
-        return x*2;
-    }
-}
+// function maps(x){
+//     if x=0{
+//         return = 0;
+//     }else{
+//         return x*2;
+//     }
+// }
 
 // didn't work, I think my syntax is wrong
+
+// third attempt
+
+function maps(x){
+    let result;
+    if (x = 0) {
+        result = 0;
+    } else {
+        result = x*2;
+    }
+    return result;
+}
+
+// still didn't work gaaahhhhh what am i doing wrooonnnngggg
